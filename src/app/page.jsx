@@ -1,4 +1,4 @@
-import CardJogo from "./components/CardJogo";
+import CardJogo from "../components/shared/CardJogo";
 
 const Page = () =>{
     return (    
