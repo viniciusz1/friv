@@ -1,11 +1,12 @@
-import Card from "./Card";
+import Card from "../Card";
 import { games } from "@/constants";
+import './styled.css'
 
 
 const CardList = () => {
 
   return (
-      <ul className="container flex flex-wrap w-screen gap-10 justify-center">
+      <ul>
         {games.length > 0 ? (
           games.map((game, index) => (
             <Card key={index} name={game.name} image={game.image} />
