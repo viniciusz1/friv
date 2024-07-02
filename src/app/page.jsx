@@ -1,48 +1,9 @@
-import CardJogo from "../components/shared/CardJogo";
+import CardList from "@/components/shared/CardList";
+import { constants } from "@/constants"
 
 const Page = () =>{
     return (    
-        <div className="container">
-            <div className="columns-6">
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-                <CardJogo/>
-
-            </div>
-        </div>
+        <CardList />
     )
 }
 
