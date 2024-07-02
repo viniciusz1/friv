@@ -1,7 +1,7 @@
 const Footer = () =>{
     return (    
         <div>
-            <h1>FRIV</h1>
+            <h1>Contato: Católica Santa Catarina SC Jaraguá do Sul</h1>
         </div>
     )
 }

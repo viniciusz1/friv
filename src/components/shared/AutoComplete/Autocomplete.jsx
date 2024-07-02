@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { games } from '@/constants';
+import { Router } from 'next/router';
 
 export default function AutocompleteJogo() {
   return (
@@ -17,6 +18,9 @@ export default function AutocompleteJogo() {
         const { key, ...optionProps } = props;
         return (
           <Box
+            onClick={() => {
+              Router.push(`/jogo/${option.id}`);
+            }}
             key={key}
             component="li"
             sx={{ '& > img': { mr: 2, flexShrink: 0 } }}
@@ -38,7 +42,7 @@ export default function AutocompleteJogo() {
           size='small'
           label="Pesquisar jogo..."
           onClick={(e) => {
-            
+
           }}
           
           inputProps={{
