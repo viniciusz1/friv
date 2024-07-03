@@ -1,4 +1,27 @@
 .item {
-    width: 400px;
-    background-color: aqua;
+    background-color: #003;
+    color: #fff;
+    transition: .4s ease-in-out;
+    border-radius: 10px;
+    max-width: 20%;
+    min-width: 300px;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .6;
+        transform: scale(1.05);
+    }
+}
+
+.game-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.game-info {
+    padding: 10px;
+}
+
+h3 {
+    font-size: 22px;
 }
