@@ -1,9 +1,15 @@
+"use client"
+
+import { useRouter } from 'next/navigation';
 import './styled.css'
-const Card = ({ name, image}) => {
+
+const Card = ({ name, image, id}) => {
+
+  const route = useRouter();
 
   return (
 
-    <li className="item" >
+    <li className="item" onClick={() => route.push(`/jogo/${id}`)} >
         <div>
           <img src={image} alt={name} className='game-img' />
         </div>
@@ -14,6 +20,5 @@ const Card = ({ name, image}) => {
     </li>
   );
 };
-
 
 export default Card;

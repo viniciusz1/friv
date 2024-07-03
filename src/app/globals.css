@@ -74,4 +74,11 @@
       @apply bg-background text-foreground;
       background-color: indigo;
     }
+
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+    }
   }

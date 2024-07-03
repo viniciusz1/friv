@@ -1,9 +1,13 @@
 import CardList from "@/components/shared/CardList";
-import { constants } from "@/constants"
+import Ads from "@/components/shared/Ads";
 
 const Page = () =>{
-    return (    
-        <CardList />
+    return (
+        <div className="page-container">
+            <Ads />    
+
+            <CardList />
+        </div>
     )
 }
 

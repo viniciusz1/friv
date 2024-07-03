@@ -1,0 +1,9 @@
+.ad-container {
+    margin-top: 100px;
+    max-width: 70%;
+    min-width: 300px;
+}
+
+.ad-img {
+    max-width: 100%;
+}
