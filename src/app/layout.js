@@ -1,7 +1,10 @@
+
+// app/layout.js
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
+import { GamesProvider } from "../context/GamesContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,18 +15,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <>
+    <GamesProvider>
       <html lang="en">
         <body className={inter.className}>
           <header>
-            <Header></Header>
+            <Header />
           </header>
           {children}
           <footer>
-            <Footer></Footer>
+            <Footer />
           </footer>
         </body>
       </html>
-    </>
+    </GamesProvider>
   );
 }
