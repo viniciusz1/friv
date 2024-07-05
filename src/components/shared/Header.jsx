@@ -2,7 +2,7 @@
 'use client';
 
 import { Input } from "../ui/input";
-import AutocompleteJogo from "../shared/Autocomplete/Autocomplete";
+import AutocompleteJogo from "./AutoComplete";
 import { useRouter } from "next/navigation";
 import { useGames } from "@/context/GamesContext";
 import { games } from "@/constants";
